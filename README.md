@@ -127,3 +127,31 @@ Code
 This version feels **authentic**: it’s simple, practical, and clearly a learning project rather than pretending to be a huge open-source framework.  
 
 Do you want me to also add a **screenshot section** (with placeholders like 
+weather_predicate/
+│
+├── index.html          # Main entry point (UI layout)
+├── style.css           # Styling for the app
+├── script.js           # Core JavaScript logic
+│
+├── assets/             # Images, icons, or logos
+│   └── weather-icons/  # Weather condition icons (sun, rain, cloud, etc.)
+│
+├── README.md           # Documentation (project overview, setup, usage)
+└── .gitignore          # Ignore unnecessary files (e.g., node_modules if added later)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Predicate</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <h1>Weather Predicate 🌦️</h1>
+    <input type="text" id="cityInput" placeholder="Enter city name">
+    <button onclick="getWeather()">Check Weather</button>
+    <div id="weatherResult"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
